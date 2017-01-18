@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence                  
+                                http://java.sun.com/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="java:postgresDS">
+		<!--  <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/tiquete</jta-data-source>
+		
+		<class>br.ind.seat.model.Preferencial</class>
+		<class>br.ind.seat.model.Geral</class>
+		
+		<shared-cache-mode>DISABLE_SELECTIVE</shared-cache-mode>
+		
+        <properties>
+            
+<!--             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" /> -->
+<!--             <property name="hibernate.show_sql" value="true"/> -->
+<!--             <property name="hibernate.format_sql" value="true"/> -->
+<!--             <property name="hibernate.hbm2ddl.auto" value="update" /> -->
+<!--             <property name="hibernate.current_session_context_class" value="thread"/> -->
+            
+            
+<!--             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" /> -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true"/>
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.current_session_context_class" value="thread"/>
+            
+			<!-- If using JPA, add to your persistence.xml -->
+			<property name="hibernate.cache.use_second_level_cache" value="true" />
+			<property name="hibernate.cache.use_query_cache" value="true" />
+			
+
+        </properties>
+        
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- 	<deployment> -->
+
+<!-- 		<exclude-subsystems> -->
+<!-- 			<subsystem name="jaxrs" /> -->
+<!-- 			<subsystem name="webservices" /> -->
+<!-- 		</exclude-subsystems> -->
+
+<!-- 		<exclusions> -->
+<!-- 			<module name="javaee.api" /> -->
+<!-- 			<module name="org.hibernate" slot="main"/> -->
+<!-- 		</exclusions> -->
+
+<!-- 		<dependencies> -->
+
+<!-- 			<module name="javaee.api"> -->
+<!-- 				<imports> -->
+<!-- 					<exclude-set> -->
+<!-- 						<path name="javax/ws/rs" /> -->
+<!-- 						<path name="javax/ws/rs/core" /> -->
+<!-- 						<path name="javax/ws/rs/ext" /> -->
+<!-- 					</exclude-set> -->
+<!-- 				</imports> -->
+<!-- 			</module> -->
+
+<!-- 			<system export="true"> -->
+<!-- 				<paths> -->
+<!-- 					<path name="com/sun/nio/zipfs" /> -->
+<!-- 				</paths> -->
+<!-- 			</system> -->
+<!-- 		</dependencies> -->
+		
+<!-- 	</deployment> -->
+</jboss-deployment-structure>

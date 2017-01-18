@@ -1,0 +1,20 @@
+<div class="jumbotron">
+	<h1 class="text-center">Atendimento</h1>
+</div>
+<form name="geralForm" class="row">
+	<div class="col-sm-9">
+		<div class="form-group">
+				<h1>Senha Geral:</h1>
+				<div class="input-group">
+					<label>Hora</label>
+					<input name="hora" class="form-control" ng-model="geral.hora" required>
+				</div>
+		</div>
+		<div ng-repeat="geral in geralALL">
+			<h1><span class="label label-default" ng-show="$last">{{geral.id}}</span></h1>
+		</div>
+		<br>
+		<button type="submit" class="btn btn-success" ng-click="addGeral(geral)">Senha</button>
+		<a class="btn btn-primary" ng-click="nextPage('/atendimento')">Voltar</a>
+	</div>
+</form>		

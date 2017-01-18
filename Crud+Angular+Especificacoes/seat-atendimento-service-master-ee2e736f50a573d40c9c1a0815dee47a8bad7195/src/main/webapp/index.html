@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="appAtendimento">
+    <head>
+    	<!-- esconde o # hash da URL -->
+        <base href="/atendimento">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Atendimento</title>
+        <link rel="stylesheet" href="atendimento/css/bootstrap.min.css">
+        <link rel="stylesheet" href="atendimento/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="atendimento/css/efeitos.css">
+        <script src="atendimento/js/lib/angular.min.js"></script>
+        <script src="atendimento/js/lib/angular-animate.min.js"></script>
+        <script src="atendimento/js/lib/angular-route.min.js"></script>
+        <script src="atendimento/js/lib/angular-resource.min.js"></script>
+        <!-- Angular:Config -->
+        <script src="atendimento/js/app.js"></script>
+        <!-- Angular:Controllers -->
+        <script src="atendimento/js/controllers/preferencial.controller.js"></script>
+        <script src="atendimento/js/controllers/geral.controller.js"></script>
+        <script src="atendimento/js/controllers/principal.controller.js"></script>
+        <!-- Angular:Services -->
+        <script src="atendimento/js/services/preferencial.service.js"></script>
+        <script src="atendimento/js/services/geral.service.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- diretiva que faz o route das paginas -->
+            <ng-view></ng-view>
+        </div> <!-- fim container -->        
+    </body>
+</html>

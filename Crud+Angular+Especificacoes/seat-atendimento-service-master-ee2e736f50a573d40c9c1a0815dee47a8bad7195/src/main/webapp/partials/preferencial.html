@@ -1,0 +1,20 @@
+<div class="jumbotron">
+	<h1 class="text-center">Atendimento</h1>
+</div>
+<form class="row">
+	  <div class="col-sm-9">
+		<h1>Senha Preferencial:</h1>
+		<div class="form-group">
+				<div class="input-group">
+					<label>Hora</label>
+					<input name="hora" class="form-control" ng-model="preferencial.hora" required>
+				</div>
+		</div>
+		<div ng-repeat="preferencial in preferencialALL">
+			<h1><span class="label label-default" ng-show="$last">{{preferencial.id}}</span></h1>
+		</div>
+		<br>
+		<button type="submit" class="btn btn-success" ng-click="addPreferencial(preferencial)">Senha</button>
+		<a class="btn btn-primary" ng-click="nextPage('/atendimento')">Voltar</a>
+	</div>
+</form>	
